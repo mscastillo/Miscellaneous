@@ -8,7 +8,7 @@ Miscellaneous programs to perform different Bioinformatics tasks.
 
 Script to convert genome coordinates between assemblies in batch.
 
-It depends on `liftOver` from the UCSC [utilities](http://hgdownload.soe.ucsc.edu/admin/exe/). It  will also require the [chain files](http://hgdownload.cse.ucsc.edu/downloads.html) to map between genome assemblies.
+It depends on `liftOver` from the [UCSC utilities](http://hgdownload.soe.ucsc.edu/admin/exe/). It  will also require the [chain files](http://hgdownload.cse.ucsc.edu/downloads.html) to map between genome assemblies.
 
 
 # `homologene.sh` [:octocat:](https://github.com/mscastillo/Miscellaneous/blob/master/homologene.sh)
