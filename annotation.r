@@ -46,3 +46,35 @@ reportedlist = mget( mylist[[1]], envir=revmap(org.Hs.egREFSEQ2EG) ) # reverse m
 length( reportedlist ) # only one list is reported in 'reportedlist'
 
 length( reportedlist[[1]] ) # and it has two IDs
+
+####################################
+# Dealing with the BiomaRt package #
+####################################
+
+library( biomaRt ) # loads the package to deal with a compendium of on-line databases
+
+listMarts() # it lists the all the databases that are available on the compendium 
+
+mymart = useMart( 'ensembl' ) # it chooses one database
+
+class( mymart ) # a specific class referred to as 'Mart' object
+
+listDatasets( mymart ) # a data.frame with all datasets in the chosen database, always with same columns structure ( 'dataset', 'description' and 'version' )
+
+mydataset = useDataset( 'hsapiens_gene_ensembl',mart=mymart ) # it chooses a specific dataset
+
+class( mydataset ) # another 'Mart' object
+
+filters = listFilters( mydataset ) # all fields to filter a query in the dataset
+
+listAttributes( mydataset ) # list of fields that can be retrieve in the data set
+
+listFilters( mydataset ) # available fields in the dataset that can be filtered to submit a query, they are not aqual to the attributes
+
+myfilters = listFilters( mydataset )[[1]][122] # name of the filter to consider, listFilters( mydataset )[[2]][122] describes the filter
+
+myvalues = c( '1','10' ) # the values to be filtered in the query
+
+myattributes = c( 'ensembl_gene_id','chromosome_name','strand','gene_exon' ) # the attributes to be retrieved
+
+getBM( attributes=myattributes,filters=myfilters,values=myvalues,mart=mydataset )
