@@ -20,6 +20,16 @@ The input file of this script is an *XML* file with the results of your query. U
 The output of the script will be a two columns table with the [Entrez Gene](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3013746/) ID of each pair of homologous genes.
 
 
-# `refseq2entrez.sh` [:octocat:](https://github.com/mscastillo/Miscellaneous/blob/master/refseq2entrez.r)
+# `refseq2entrez.r` [:octocat:](https://github.com/mscastillo/Miscellaneous/blob/master/refseq2entrez.r)
 
 Script to map between different (human) gene annotations using [org.Hs.eg.db](http://www.bioconductor.org/packages/release/data/annotation/html/org.Hs.eg.db.html).
+
+
+# `annotation.r` [:octocat:](https://github.com/mscastillo/Miscellaneous/blob/master/annotation.r)
+
+Examples and general instructions to manage between gene annotations using:
+ * [org.Hs.eg.db](http://www.bioconductor.org/packages/release/data/annotation/html/org.Hs.eg.db.html), additional information about others non-human genomes can be fund [here](http://davetang.org/muse/2013/12/16/bioconductor-annotation-packages/).
+ * [biomaRt](http://bioconductor.org/packages/release/bioc/html/biomaRt.html).
+
+> Have a look to the whole list of Bioconductors annotation packages [here](http://www.bioconductor.org/packages/release/data/annotation/).
+
