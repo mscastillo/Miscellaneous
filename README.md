@@ -20,6 +20,6 @@ The input file of this script is an *XML* file with the results of your query. U
 The output of the script will be a two columns table with the [Entrez Gene](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3013746/) ID of each pair of homologous genes.
 
 
-# `refseq2entrez.sh` [:octocat:](https://github.com/mscastillo/Miscellaneous/blob/master/refseq2entrez.sh)
+# `refseq2entrez.sh` [:octocat:](https://github.com/mscastillo/Miscellaneous/blob/master/refseq2entrez.r)
 
 Script to map between different (human) gene annotations using [org.Hs.eg.db](http://www.bioconductor.org/packages/release/data/annotation/html/org.Hs.eg.db.html).
